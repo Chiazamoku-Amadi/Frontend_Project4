@@ -616,6 +616,7 @@ footer {
     .aboutUs {
         width: 100%;
         margin-top: 3em;
+        margin-left: 0;
     }
     .footerDiv>.aboutUs>p {
         font-size: 14px;
