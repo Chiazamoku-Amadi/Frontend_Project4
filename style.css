@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.headerLogo {
+    width: 8em;
+    height: 1.5em;
+    max-width: 100%;
+}
+
+.headerDiv>div>.button {
+    font-size: 12px;
+    background-color: transparent;
+    color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+}
+
+.headerDiv>div>.button:active {
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1>h1 {
+    font-size: 40px;
+    margin-top: 1em;
+}
+
+.sec1>p {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 420px;
+    padding: 1em;
+}
+
+.sec1>div>.button {
+    font-size: 15px;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(207, 100%, 98%);
+    border: 1px solid hsl(321, 100%, 78%);
+    border-radius: 25px;
+    padding: 1.2em 5em;
+    margin: 2em;
+}
+
+.sec1>div>.button:active {
+    background-color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+}
+
+.screenMockup {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+}
+
+.sec1Div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.sec1Div>div>img {
+    width: 20px;
+    height: 20px;
+}
+
+.sec1Div>div>.comm {
+    color: hsl(192, 100%, 9%);
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.sec1Div>div>.msg {
+    color: hsl(192, 100%, 9%);
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.communities {
+    margin-right: 4em;
+}
+
+.messages {
+    margin-left: 4em;
+}
+
+.number {
+    font-size: 50px;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+
+.sec2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bgCurve1 {
+    background-size: cover;
+    background-color: #F6FBFF;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.bgCurve1::before {
+    content: "";
+    background-image: url(/images/bg-section-top-desktop-1.svg);
+    position: absolute;
+    top: -10em;
+    left: -5em;
+    height: 10rem;
+    width: 100rem;
+}
+
+.grow {
+    width: 28%;
+}
+
+.grow>h2 {
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.grow>p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.illustration1 {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    margin: 1em 0;
+}
+
+.bgCurve2 {
+    background-size: cover;
+    background-color: #F6FBFF;
+    margin-top: 15rem;
+    position: relative;
+}
+
+.bgCurve2::after {
+    content: "";
+    background-image: url(/images/bg-section-bottom-desktop-1.svg);
+    position: absolute;
+    top: 3em;
+    left: -82em;
+    height: 8.5rem;
+    width: 200rem;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.illustration2 {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    margin: 1em 0;
+}
+
+.convo {
+    width: 29%;
+}
+
+.convo>h2 {
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.convo>p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sec4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bgCurve3 {
+    background-size: cover;
+    background-color: #F6FBFF;
+    position: relative;
+}
+
+.bgCurve3::before {
+    content: "";
+    background-image: url(/images/bg-section-top-desktop-2.svg);
+    position: absolute;
+    top: -9em;
+    left: -5em;
+    height: 10rem;
+    width: 150rem;
+}
+
+.users {
+    width: 28%;
+}
+
+.users>h2 {
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.users>p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.illustration3 {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    margin: 2em 0;
+}
+
+.bgCurve4 {
+    background-size: cover;
+    background-color: #F6FBFF;
+    margin-top: 15rem;
+    position: relative;
+}
+
+.bgCurve4::after {
+    content: "";
+    background-image: url(/images/bg-section-bottom-desktop-2.svg);
+    position: absolute;
+    top: 23em;
+    left: -95rem;
+    height: 8.5rem;
+    width: 250rem;
+}
+
+.sec5 {
+    text-align: center;
+    margin: 18em 0;
+}
+
+.sec5>h2 {
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+.sec5>div>.button {
+    font-size: 15px;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(207, 100%, 98%);
+    border: 1px solid hsl(321, 100%, 78%);
+    border-radius: 25px;
+    padding: 1.2em 5em;
+}
+
+.sec5>div>.button:active {
+    background-color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+}
+
+.bgCurve5 {
+    background-size: cover;
+    background-color: hsl(192, 100%, 9%);
+    position: relative;
+}
+
+.bgCurve5::before {
+    content: "";
+    background-image: url(/images/bg-footer-top-desktop.svg);
+    position: absolute;
+    top: -9.5em;
+    left: -5em;
+    height: 10rem;
+    width: 200rem;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(207, 100%, 98%);
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 5rem 2rem 5rem;
+}
+
+.footerLogo {
+    width: 11em;
+    height: 2em;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.footerDiv>.aboutUs>p,
+.footerDiv>.aboutUs>.contacts>p {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 1em;
+}
+
+.aboutUs {
+    width: 20%;
+}
+
+.iconPhone,
+.iconEmail {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.socials {
+    font-size: 25px;
+    margin-top: 2em;
+}
+
+.socials>a {
+    color: hsl(207, 100%, 98%);
+    margin-right: 0.5em;
+}
+
+.socials>a:active {
+    color: skyblue;
+}
+
+.subscribe {
+    width: 23%;
+}
+
+.subscribe>h4,
+.subscribe>p,
+.subscribe>div {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 1em;
+}
+
+.subscribe>h4 {
+    font-size: 20px;
+}
+
+.callToAction {
+    display: flex;
+    margin: 3em 0;
+}
+
+.email {
+    box-sizing: border-box;
+    width: 19em;
+    padding: 0.8em 3em;
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 3px;
+    margin-right: 1em;
+}
+
+.callToAction>.button {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(207, 100%, 98%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 3px;
+    padding: 0.8em 2em;
+    margin-left: 1em;
+}
+
+.callToAction>.button:active {
+    background-color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+}
