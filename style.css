@@ -151,7 +151,7 @@ h3 {
     background-image: url(/images/bg-section-top-desktop-1.svg);
     position: absolute;
     top: -10em;
-    left: -5em;
+    left: -4em;
     height: 10rem;
     width: 100rem;
 }
@@ -239,7 +239,7 @@ h3 {
     background-image: url(/images/bg-section-top-desktop-2.svg);
     position: absolute;
     top: -9em;
-    left: -5em;
+    left: -4em;
     height: 10rem;
     width: 150rem;
 }
@@ -277,7 +277,7 @@ h3 {
     background-image: url(/images/bg-section-bottom-desktop-2.svg);
     position: absolute;
     top: 23em;
-    left: -95rem;
+    left: -94rem;
     height: 8.5rem;
     width: 250rem;
 }
@@ -318,7 +318,7 @@ h3 {
     background-image: url(/images/bg-footer-top-desktop.svg);
     position: absolute;
     top: -9.5em;
-    left: -5em;
+    left: -4em;
     height: 10rem;
     width: 200rem;
 }
@@ -330,7 +330,7 @@ footer {
 
 .footerDiv {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 5rem 5rem 2rem 5rem;
 }
@@ -351,6 +351,7 @@ footer {
 
 .aboutUs {
     width: 20%;
+    margin-left: 5em;
 }
 
 .iconPhone,
@@ -375,36 +376,38 @@ footer {
 }
 
 .subscribe {
-    width: 23%;
+    width: 40%;
 }
 
-.subscribe>h4,
-.subscribe>p,
-.subscribe>div {
+.subscribe>h4 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 1em;
+}
+
+.subscribe>p {
+    max-width: 270px;
     font-size: 11px;
     line-height: 20px;
     margin-bottom: 1em;
 }
 
-.subscribe>h4 {
-    font-size: 20px;
-}
-
 .callToAction {
     display: flex;
+    flex-wrap: wrap;
     margin: 3em 0;
+    width: 100%;
 }
 
-.email {
+.callToAction>div>.email {
     box-sizing: border-box;
-    width: 19em;
     padding: 0.8em 3em;
     border: 1px solid hsl(0, 0%, 75%);
     border-radius: 3px;
     margin-right: 1em;
 }
 
-.callToAction>.button {
+.callToAction>div>.button {
     font-size: 13px;
     font-weight: 600;
     background-color: hsl(322, 100%, 66%);
@@ -418,4 +421,209 @@ footer {
 .callToAction>.button:active {
     background-color: hsl(321, 100%, 78%);
     border: 1px solid hsl(321, 100%, 78%);
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        max-width: 375px;
+    }
+    .headerDiv {
+        padding: 1rem;
+    }
+    .sec1>h1 {
+        font-size: 30px;
+        margin-top: 4em;
+        text-align: center;
+    }
+    .sec1>p {
+        max-width: 320px;
+    }
+    .sec1>div>.button,
+    .sec5>div>.button {
+        font-size: 13px;
+        padding: 1em 3em;
+        margin: 2em 0 8em 0;
+    }
+    .screenMockup {
+        height: 250px;
+    }
+    .sec1Div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec1Div>div>img {
+        width: 40px;
+        height: 40px;
+    }
+    .sec1Div>div>.comm,
+    .sec1Div>div>.msg {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .communities {
+        margin: 0 auto;
+        margin-bottom: 5em;
+    }
+    .messages {
+        margin: 0 auto;
+    }
+    .number {
+        font-size: 60px;
+    }
+    .sec2,
+    .sec4 {
+        flex-direction: column-reverse;
+    }
+    .bgCurve1 {
+        background-size: cover;
+        background-color: #F6FBFF;
+        margin-top: 10rem;
+        position: relative;
+    }
+    .bgCurve1::before {
+        content: "";
+        background-image: url(/images/bg-section-top-mobile-1.svg);
+        position: absolute;
+        top: -7em;
+        left: 0;
+        height: 7rem;
+        width: 23.45rem;
+    }
+    .illustration1 {
+        width: 250px;
+        height: 200px;
+        max-width: 100%;
+        margin-top: -8em;
+    }
+    .grow,
+    .convo,
+    .users {
+        width: 100%;
+        padding: 0.5em;
+        margin: 4em 0;
+    }
+    .grow>h2,
+    .convo>h2,
+    .users>h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .grow>p,
+    .convo>p,
+    .users>p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .bgCurve2 {
+        background-size: cover;
+        background-color: #F6FBFF;
+        margin-top: 15rem;
+        position: relative;
+    }
+    .bgCurve2::after {
+        content: "";
+        background-image: url(/images/bg-section-bottom-mobile-1.svg);
+        position: absolute;
+        top: 22em;
+        left: -11.7em;
+        height: 3.2rem;
+        width: 23.44rem;
+    }
+    .sec3 {
+        flex-direction: column;
+    }
+    .illustration2,
+    .illustration3 {
+        width: 250px;
+        height: 200px;
+        max-width: 100%;
+    }
+    .bgCurve3 {
+        background-size: cover;
+        background-color: #F6FBFF;
+        position: relative;
+    }
+    .bgCurve3::before {
+        content: "";
+        background-image: url(/images/bg-section-top-mobile-2.svg);
+        position: absolute;
+        top: -6em;
+        left: 0;
+        height: 6.5rem;
+        width: 23.45rem;
+    }
+    .bgCurve4 {
+        background-size: cover;
+        background-color: #F6FBFF;
+        margin-top: 15rem;
+        position: relative;
+    }
+    .bgCurve4::after {
+        content: "";
+        background-image: url(/images/bg-section-bottom-mobile-2.svg);
+        position: absolute;
+        top: 33em;
+        left: 0;
+        height: 6rem;
+        width: 23.45rem;
+    }
+    .sec5 {
+        margin: 12em 0 16em 0;
+    }
+    .sec5>h2 {
+        font-size: 25px;
+        margin-bottom: 1em;
+    }
+    .bgCurve5 {
+        background-size: cover;
+        background-color: hsl(192, 100%, 9%);
+        position: relative;
+    }
+    .bgCurve5::before {
+        content: "";
+        background-image: url(/images/bg-footer-top-mobile.svg);
+        position: absolute;
+        top: -2.8em;
+        left: 0;
+        height: 3rem;
+        width: 23.45rem;
+    }
+    .footerDiv {
+        flex-direction: column-reverse;
+        padding: 3em 2em;
+    }
+    .subscribe {
+        width: 100%;
+    }
+    .subscribe>p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .callToAction {
+        justify-content: end;
+    }
+    .callToAction>div>.email {
+        width: 100%;
+        padding: 1.2em 5em;
+        margin-bottom: 1em;
+    }
+    .callToAction>div>.button {
+        font-size: 15px;
+        padding: 1em 2.5em;
+    }
+    .aboutUs {
+        width: 100%;
+        margin-top: 3em;
+    }
+    .footerDiv>.aboutUs>p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 3em;
+    }
+    .footerDiv>.aboutUs>.contacts>p {
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
