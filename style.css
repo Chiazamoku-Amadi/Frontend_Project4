@@ -49,6 +49,11 @@ h3 {
     border: 1px solid hsl(322, 100%, 66%);
 }
 
+.sec,
+footer {
+    /* overflow: hidden; */
+}
+
 .sec1 {
     display: flex;
     flex-direction: column;
@@ -151,9 +156,9 @@ h3 {
     background-image: url(/images/bg-section-top-desktop-1.svg);
     position: absolute;
     top: -10em;
-    left: -4em;
+    left: 0;
     height: 10rem;
-    width: 100rem;
+    width: 85rem;
 }
 
 .grow {
@@ -189,9 +194,9 @@ h3 {
     background-image: url(/images/bg-section-bottom-desktop-1.svg);
     position: absolute;
     top: 3em;
-    left: -82em;
+    left: -80em;
     height: 8.5rem;
-    width: 200rem;
+    width: 87rem;
 }
 
 .sec3 {
@@ -239,9 +244,9 @@ h3 {
     background-image: url(/images/bg-section-top-desktop-2.svg);
     position: absolute;
     top: -9em;
-    left: -4em;
+    left: 0;
     height: 10rem;
-    width: 150rem;
+    width: 85rem;
 }
 
 .users {
@@ -277,9 +282,9 @@ h3 {
     background-image: url(/images/bg-section-bottom-desktop-2.svg);
     position: absolute;
     top: 23em;
-    left: -94rem;
+    left: 0;
     height: 8.5rem;
-    width: 250rem;
+    width: 85rem;
 }
 
 .sec5 {
@@ -318,9 +323,9 @@ h3 {
     background-image: url(/images/bg-footer-top-desktop.svg);
     position: absolute;
     top: -9.5em;
-    left: -4em;
+    left: 0;
     height: 10rem;
-    width: 200rem;
+    width: 85rem;
 }
 
 footer {
@@ -423,9 +428,9 @@ footer {
     border: 1px solid hsl(321, 100%, 78%);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 412px) {
     .container {
-        max-width: 375px;
+        /* overflow: hidden; */
     }
     .headerDiv {
         padding: 1rem;
@@ -485,7 +490,7 @@ footer {
         content: "";
         background-image: url(/images/bg-section-top-mobile-1.svg);
         position: absolute;
-        top: -7em;
+        top: -6em;
         left: 0;
         height: 7rem;
         width: 23.45rem;
