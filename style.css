@@ -428,7 +428,7 @@ footer {
     border: 1px solid hsl(321, 100%, 78%);
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 414px) {
     .container {
         /* overflow: hidden; */
     }
